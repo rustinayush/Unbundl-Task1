@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.chocolate-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.chocolate-item {
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.chocolate-item img {
+  width: 162px;
+  height: 162px;
+}
+.custom-pack {
+  margin-top: 20px;
+}
+#custom-pack-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+#custom-pack-list button {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+#custom-pack-list button:hover {
+  background-color: lightblue;
+}
+
+#custom-pack-list {
+  list-style: none;
+  padding: 10px;
+}
+#custom-pack-list li {
+  margin-bottom: 30px;
+}
+
+#total-price {
+  font-weight: bold;
+}
+
+/* Define the grid layout with 1 column for larger screens */
+.chocolate-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+/* For screens with a maximum width of 767px (typical mobile devices) */
+@media (max-width: 767px) {
+  .chocolate-container {
+    grid-template-columns: repeat(2, 1fr); /* Set 2 columns for mobile view */
+  }
+}
+
+/* Style for chocolate items */
+.chocolate-item {
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.chocolate-item img {
+  width: 162px;
+  height: 162px;
+}
